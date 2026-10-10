@@ -8,4 +8,4 @@ Source for https://siamkosi.com, hosted with Sites.
 - assets/: images
 - dist/: published static files (keep aligned with source)
 
-After each update and Sites publication, run `powershell -File ./sync-github.ps1` to mirror committed source to GitHub. This does not watch unsaved files or deploy the site.
+After each update and Sites publication, run `git push github HEAD:main` (or `./sync-github.ps1` where PowerShell scripts are enabled) to mirror committed source to GitHub. This does not watch unsaved files or deploy the site.
